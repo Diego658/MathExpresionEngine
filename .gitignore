@@ -1,0 +1,21 @@
+#VsCode files#
+/.vs
+/MathExpresionEngine/bin
+/MathExpresionEngine/obj
+/MathExpresionEngine.Tests/bin
+/MathExpresionEngine.Tests/obj
+/MathExpresionEngine.Benchmarks/bin
+/MathExpresionEngine.Benchmarks/obj
+/.idea
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pubxml
+*.pubxml.*
