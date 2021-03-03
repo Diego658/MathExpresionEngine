@@ -23,10 +23,9 @@ namespace MathExpresionEngine.Tests
         [SetUp]
         public void Setup()
         {
-      
             _expresionsToTest = new Dictionary<string, double>
             {
-                { "1.0*1.0", 1d},
+                { $"1{MathExpresionEngine.Constants.DecimalSign}0*1{MathExpresionEngine.Constants.DecimalSign}0", 1d},
                 {"2^5", 32d },
                 {"2^(5*(3-2))", 32d },
                 {"2^(5*3)", 32768d },
@@ -42,7 +41,7 @@ namespace MathExpresionEngine.Tests
             {
                 new ExpresionWithLiterals
                 {
-                    Expresion = "(  ( Cantidad * Precio )  -  ( Desc_Aut + Desc_Manual )  )  * 0.12",
+                    Expresion = $"(  ( Cantidad * Precio )  -  ( Desc_Aut + Desc_Manual )  )  * 0{MathExpresionEngine.Constants.DecimalSign}12",
                     Literals = new Dictionary<string, double>
                     {
                         {"Cantidad", 1},

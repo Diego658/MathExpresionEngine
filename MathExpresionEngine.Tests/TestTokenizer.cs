@@ -14,13 +14,11 @@ namespace MathExpresionEngine.Tests
         [SetUp]
         public void Setup()
         {
-
-
             basicExpresion = "";
             basicExpresionAssertValues = new Dictionary<string, List<Token>>
             {
                 {
-                    "1.0*1.0", 
+                    $"1{MathExpresionEngine.Constants.DecimalSign}0*1{MathExpresionEngine.Constants.DecimalSign}0", 
                     new List<Token>
                     {
                         Token.Number,
@@ -30,7 +28,7 @@ namespace MathExpresionEngine.Tests
                     }
                 },
                 {
-                    "(  ( Cantidad * Precio )  -  ( Desc_Aut + Desc_Manual )  )  * 0.12",
+                    $"(  ( Cantidad * Precio )  -  ( Desc_Aut + Desc_Manual )  )  * 0{MathExpresionEngine.Constants.DecimalSign}12",
                     new List<Token>
                     {
                         Token.OpenParens,
