@@ -19,3 +19,4 @@ ehthumbs.db
 Thumbs.db
 *.pubxml
 *.pubxml.*
+/MathExpresionEngine.sln.DotSettings.user
